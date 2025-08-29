@@ -2,7 +2,7 @@
 
 A sleek, modern video conferencing application built with React, TypeScript, and WebRTC. Experience seamless video calls with a professional Google Meet-style interface.
 
-![VideoConnect App](./screenshots/app-preview.png)
+![VideoConnect App](./screenshots/Screenshot.png)
 
 ## ✨ Features
 
