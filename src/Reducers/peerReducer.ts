@@ -22,9 +22,9 @@ export const peerReducer = (state: PeerState, action: PeerAction) => {
                 },
             };
         case REMOVE_PEER:
-            // removing a peer
-            // TODO: you can try to write ogic to remove a peer
-            return { ...state };
+            const newState = { ...state };
+            delete newState[action.payload.peerId];
+            return newState;
         default:
             return { ...state };
     }

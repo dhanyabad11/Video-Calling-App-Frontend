@@ -2,27 +2,27 @@ import CreateRoom from "../Components/CreateRoom";
 
 const Home: React.FC = () => {
     return (
-        <div className="min-h-screen bg-gray-50" data-theme="light">
-            <div className="hero min-h-screen bg-gradient-to-br from-slate-100 via-blue-50 to-indigo-100">
+        <div className="min-h-screen bg-slate-900" data-theme="dark">
+            <div className="hero min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
                 <div className="hero-content text-center">
                     <div className="max-w-2xl">
-                        <h1 className="text-6xl font-light text-slate-800 mb-6">
+                        <h1 className="text-6xl font-light text-white mb-6">
                             Video meetings with
                             <br />
-                            <span className="text-blue-600 font-medium">VideoConnect</span>
+                            <span className="text-blue-400 font-medium">Limgrave</span>
                         </h1>
-                        <p className="text-xl text-slate-600 mb-8 font-light leading-relaxed">
+                        <p className="text-xl text-slate-300 mb-8 font-light leading-relaxed">
                             Connect, collaborate and celebrate from anywhere with secure video
                             conferencing
                         </p>
                         <CreateRoom />
 
-                        {/* Feature cards with better colors */}
+                        {/* Feature cards with dark theme */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-16 max-w-4xl">
-                            <div className="bg-white/70 backdrop-blur-sm rounded-xl shadow-sm border border-slate-200/50 p-6 hover:shadow-lg hover:bg-white/80 transition-all duration-300">
-                                <div className="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center mb-4 mx-auto">
+                            <div className="bg-slate-800/70 backdrop-blur-sm rounded-xl shadow-lg border border-slate-700/50 p-6 hover:shadow-xl hover:bg-slate-800/80 transition-all duration-300">
+                                <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center mb-4 mx-auto">
                                     <svg
-                                        className="w-6 h-6 text-blue-600"
+                                        className="w-6 h-6 text-blue-400"
                                         fill="none"
                                         stroke="currentColor"
                                         viewBox="0 0 24 24"
@@ -35,18 +35,18 @@ const Home: React.FC = () => {
                                         />
                                     </svg>
                                 </div>
-                                <h3 className="text-lg font-medium text-slate-800 mb-2">
+                                <h3 className="text-lg font-medium text-white mb-2">
                                     Secure and reliable
                                 </h3>
-                                <p className="text-slate-600 text-sm leading-relaxed">
+                                <p className="text-slate-400 text-sm leading-relaxed">
                                     Built with security and privacy in mind, keeping your
                                     conversations protected
                                 </p>
                             </div>
-                            <div className="bg-white/70 backdrop-blur-sm rounded-xl shadow-sm border border-slate-200/50 p-6 hover:shadow-lg hover:bg-white/80 transition-all duration-300">
-                                <div className="w-12 h-12 bg-green-500/10 rounded-xl flex items-center justify-center mb-4 mx-auto">
+                            <div className="bg-slate-800/70 backdrop-blur-sm rounded-xl shadow-lg border border-slate-700/50 p-6 hover:shadow-xl hover:bg-slate-800/80 transition-all duration-300">
+                                <div className="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center mb-4 mx-auto">
                                     <svg
-                                        className="w-6 h-6 text-green-600"
+                                        className="w-6 h-6 text-green-400"
                                         fill="none"
                                         stroke="currentColor"
                                         viewBox="0 0 24 24"
@@ -59,10 +59,10 @@ const Home: React.FC = () => {
                                         />
                                     </svg>
                                 </div>
-                                <h3 className="text-lg font-medium text-slate-800 mb-2">
+                                <h3 className="text-lg font-medium text-white mb-2">
                                     Fast and easy
                                 </h3>
-                                <p className="text-slate-600 text-sm leading-relaxed">
+                                <p className="text-slate-400 text-sm leading-relaxed">
                                     Start a meeting in seconds, no downloads or complicated setup
                                     required
                                 </p>
