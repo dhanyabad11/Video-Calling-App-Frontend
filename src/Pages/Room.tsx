@@ -5,23 +5,21 @@ import UserFeedPlayer from "../Components/UserFeedPlayer";
 
 const Room: React.FC = () => {
     const { id } = useParams();
-    const { socket, user, stream, peers, joinRoom } = useContext(SocketContext);
+    const { socket, user, stream, peers } = useContext(SocketContext);
     const [isMuted, setIsMuted] = useState(false);
     const [isVideoOff, setIsVideoOff] = useState(false);
     const [showParticipants, setShowParticipants] = useState(false);
     const [showChat, setShowChat] = useState(false);
     const [meetingTime, setMeetingTime] = useState(0);
 
+    // FIXED: Use the working event emission pattern
     useEffect(() => {
         if (user && id) {
             console.log("New user with id", user._id, "has joined room", id);
-            if (joinRoom) {
-                joinRoom(id, user._id);
-            } else {
-                socket.emit("join-room", { roomId: id, userId: user._id });
-            }
+            // Use the working event name that your backend expects
+            socket.emit("joined-room", { roomId: id, peerId: user._id });
         }
-    }, [id, user, socket, joinRoom]);
+    }, [id, user, socket]);
 
     // Meeting timer
     useEffect(() => {
